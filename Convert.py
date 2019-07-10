@@ -10,9 +10,9 @@ if len(sys.argv) != 2:
 
 try:
         
-        with open(sys.argv[1], "r") as inFile:
-            data = inFile.readlines()
-            name,ext = os.path.splitext(inFile.name)
+        with open(sys.argv[1], "r") as file:
+            data = file.readlines()
+            name,ext = os.path.splitext(file.name)
             
             dataSwitch = False
             header = ""
@@ -32,8 +32,8 @@ try:
                     newData.append(line)
 
             
-            with open(name+".csv", "w") as outFile:
-                outFile.writelines(newData)
+            with open(name+".csv", "w") as filecsv:
+                filecsv.writelines(newData)
             
         
          
