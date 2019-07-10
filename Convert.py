@@ -60,6 +60,8 @@ try:
                 i += 1
             
             
+            
+            dataJson = dataJson[:-1]
             temp = dataJson[0].split(",")
             print(temp)
             
