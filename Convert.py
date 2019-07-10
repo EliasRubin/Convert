@@ -9,7 +9,7 @@ if len(sys.argv) != 2:
 
 try:
 
-        data = arff.loadarff('iris.arff')
+        data = arff.loadarff(sys.argv[1])
         
 
         for row in data:
