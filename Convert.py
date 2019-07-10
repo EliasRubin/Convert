@@ -60,8 +60,8 @@ try:
                 i += 1
             
             
-
-            print(dataJson[0])
+            temp = dataJson[0].split(",")
+            print(temp)
             
             i = 0
             while i < len(headers):
