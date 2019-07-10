@@ -69,7 +69,7 @@ try:
             
 
             with open(name + ".json", 'w') as filejson: 
-                json.dump(dataJson, filejson)
+                json.dump(newCsv, filejson)
                 
             
             
