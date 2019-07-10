@@ -40,9 +40,12 @@ try:
 
 
             headers = newCsv[0].split(",")
+            
             dataJson = []
-            
-            
+            i = 0
+             while i < len(headers):
+                dataJson.append()
+                i += 1
             
             i = 1
             while i < len(newCsv):
@@ -51,16 +54,16 @@ try:
                 while j < len(headers):
                     if temp[0][0] == "%":
                         break
-                    print(temp)
-                    dataJson.append(temp[j])
+                    dataJson[j] += temp[j]
                     j += 1
                 i += 1
+            
             
             
             i = 0
             while i < len(headers):
                 headers[i] += ': '
-                headers[i] += dataJson[i]
+                headers[i] += dataJson[i].split(",")
                 i += 1
                 
                 
