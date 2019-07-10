@@ -41,11 +41,11 @@ try:
             i = len(newCsv)
             
             
-            txt = "hello, my name is Peter, I am 26 years old"
 
-            x = txt.split(",")
 
-            print(x[0])
+            headers = newCsv[0].split(",")
+
+            print(headers)
             
             
             
