@@ -17,7 +17,7 @@ try:
             csvSwitch = False
             header = ""
             newCsv = []
-            newJson = ""
+
             
             for line in data:
                 if not csvSwitch:
@@ -28,9 +28,9 @@ try:
                     elif "@data" in line:
                         csvSwitch = True
                         header = header[:-1]
-                        header += "\n"
                         newCsv.append(header)            
                 else:
+                    line = line[:-1]
                     newCsv.append(line)
 
                     
