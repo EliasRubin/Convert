@@ -65,7 +65,7 @@ try:
             i = 0
             while i < len(headers):
                 headers[i] += ': '
-                print(temp[i])
+                print(dataJson[i])
                 i += 1
                 
                 
