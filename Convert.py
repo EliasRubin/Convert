@@ -45,7 +45,7 @@ try:
             print(headers)
             
             i = 1
-            while i < len(newCsv)-1:
+            while i < (len(newCsv)-1):
                 j = 0
                 temp = newCsv[i].split(",")
                 print(str(len(temp)))
