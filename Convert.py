@@ -50,7 +50,7 @@ try:
                 temp = newCsv[i].split(",")
                 item = '{ '
                 while j < len(headers):
-                    if temp[0][0] == '%']:
+                    if temp[0][0] == '%':
                         break 
                     item += headers[j] + ': ' + temp[j] + ', '
                     j += 1
