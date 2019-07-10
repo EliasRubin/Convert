@@ -61,12 +61,13 @@ try:
             
             
             
-            dataJson[0] = dataJson[0][:-1]
-            temp = dataJson[0].split(",")
-            print(temp)
+
             
             i = 0
             while i < len(headers):
+                dataJson[i] = dataJson[i][:-1]
+                temp = dataJson[i].split(",")
+                print(temp)
                 headers[i] += ': '
                 i += 1
                 
