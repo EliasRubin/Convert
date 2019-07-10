@@ -61,7 +61,7 @@ try:
             
             
             
-            dataJson = dataJson[:-1]
+            dataJson[0] = dataJson[0][:-1]
             temp = dataJson[0].split(",")
             print(temp)
             
