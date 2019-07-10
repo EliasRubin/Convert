@@ -12,7 +12,7 @@ try:
         data = arff.loadarff(sys.argv[1])
         
         for row in data:
-            print(row)
+            print(data[row])
         
 
 
