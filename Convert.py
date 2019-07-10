@@ -31,9 +31,9 @@ try:
                     else:
                         newContent.append(line)
                         new = newContent
-
-            with open(name+".csv", "w") as outFile:
-                outFile.writelines(new)
+            
+            print(header)
+            
         
          
        
