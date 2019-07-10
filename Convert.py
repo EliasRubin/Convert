@@ -49,7 +49,7 @@ try:
                 temp = newCvs[i].split(",")
                 item = '{ '
                 while j < len(headers):
-                    item += headers[j] + ': " + temp[j] + ', '
+                    item += headers[j] + ': ' + temp[j] + ', '
                     j += 1
                 item = item[:-2]
                 item = item + ' }'
