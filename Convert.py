@@ -18,7 +18,7 @@ try:
             header = ""
             newCsv = []
             newJson = {}
-            
+            newJson = []
             
             for line in data:
                 if not csvSwitch:
