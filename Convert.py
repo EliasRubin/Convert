@@ -44,7 +44,7 @@ try:
             dataJson = []
             i = 0
             while i < len(headers):
-                dataJson.append()
+                dataJson.append("")
                 i += 1
             
             i = 1
