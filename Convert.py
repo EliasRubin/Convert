@@ -66,13 +66,13 @@ try:
                 
             
             with open(name + ".csv", "w") as filecsv:
-                filecsv.writelines(headers)
+                filecsv.writelines(newCsv)
                 
                
 
 
             with open(name + ".json", 'w') as filejson:  
-                json.dump(newJson, filejson)
+                json.dump(headers, filejson)
             
         
          
