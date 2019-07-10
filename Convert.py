@@ -17,7 +17,8 @@ try:
             csvSwitch = False
             header = ""
             newCsv = []
-            newJson = {}  
+            newJson = {}
+
             
             for line in data:
                 if not csvSwitch:
@@ -33,9 +34,24 @@ try:
                 else:
                     newCsv.append(line)
 
-            for rows in newCsv:
-                id = rows['id']
-                dataJson[id] = rows
+                    
+                    
+            headers = []
+            word = ""
+            i = 0
+            j = 0
+            while 1 == 1:
+                if newCsv[i] == ',':
+                    word += newCsv[i]
+                else:
+                    headers[j] = word
+                    j += 1
+                    word = ""
+            i += 1
+            
+            
+            print(headers)
+            
             
             with open(name + ".csv", "w") as filecsv:
                 filecsv.writelines(newCsv)
