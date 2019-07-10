@@ -35,12 +35,18 @@ try:
                     newCsv.append(line)
 
                     
+            with open(name + ".csv", "w") as filecsv:
+                filecsv.writelines(newCsv)
            
             
             
 
-
+            
             headers = newCsv[0].split(",")
+            i = 0
+            while i < len(newCsv):
+                newCsv[len(headers)-1] = newCsv[len(headers)-1][:-1]
+            
             
             dataJson = []
             i = 0
@@ -74,8 +80,7 @@ try:
                 
                 
             
-            with open(name + ".csv", "w") as filecsv:
-                filecsv.writelines(newCsv)
+            
                 
                
 
