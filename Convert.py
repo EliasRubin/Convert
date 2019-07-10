@@ -45,7 +45,7 @@ try:
             headers = newCsv[0].split(",")
             i = 0
             while i < len(newCsv):
-                newCsv[len(headers)-1] = newCsv[len(headers)-1][:-1]
+                newCsv[len(headers)] = newCsv[len(headers)][:-1]
                 i += 1
             
             
@@ -60,6 +60,8 @@ try:
                 j = 0
                 temp = newCsv[i].split(",")
                 while j < len(headers):
+                    if temp[0][0] == "%":
+                        break
                     dataJson[j] += temp[j]
                     dataJson[j] += ","
                     j += 1
