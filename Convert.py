@@ -46,7 +46,7 @@ try:
             i = 1
             while i < len(newCsv):
                 j = 0
-                temp = newCvs[i].split(",")
+                temp = newCsv[i].split(",")
                 item = '{ '
                 while j < len(headers):
                     item += headers[j] + ': ' + temp[j] + ', '
