@@ -30,6 +30,8 @@ try:
                         header = header[:-1]
                         newCsv.append(header)            
                 else:
+                    if line[0] == "%":
+                        break
                     newCsv.append(line)
 
                     
