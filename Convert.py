@@ -76,6 +76,7 @@ try:
                     temp = dataJson[i].split(",")
                     filejson.write(headers[i] + ": ")
                     filejson.writelines(temp)
+                    filejson.write("\n")
                     i += 1
                 filejson.write("}")
                 
