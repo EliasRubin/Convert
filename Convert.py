@@ -66,7 +66,7 @@ try:
             while i < len(headers):
                 temp = dataJson[i].split
                 headers[i] += ': '
-                headers[i] += temp
+                print(temp)
                 i += 1
                 
                 
