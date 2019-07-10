@@ -33,7 +33,7 @@ try:
                         new = newContent
 
             with open(name+".csv", "w") as outFile:
-            outFile.writelines(new)
+                outFile.writelines(new)
         
          
        
