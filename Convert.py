@@ -41,8 +41,6 @@ try:
 
 
             headers = newCsv[0].split(",")
-            print(str(len(headers)))
-            print(headers)
             
             i = 1
             while i < len(newCsv):
