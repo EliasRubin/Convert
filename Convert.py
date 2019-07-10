@@ -53,7 +53,7 @@ try:
                     item += headers[j] + ': ' + temp[j] + ', '
                     j += 1
                 item = item[:-2]
-                item = item + ' }'
+                item = item + ' }\n'
                 newJson.append(item)
                 i += 1
             
