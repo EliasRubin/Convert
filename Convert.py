@@ -10,9 +10,9 @@ if len(sys.argv) != 2:
 try:
 
         data = arff.loadarff(sys.argv[1])
-        df = pd.DataFrame(data[0])
-
-        df.head()
+        
+        for row in data:
+            print(row)
         
 
 
