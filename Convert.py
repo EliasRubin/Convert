@@ -16,6 +16,7 @@ try:
             
             data = False
             header = ""
+            data
             newContent = []
             for line in content:
                 if not data:
@@ -27,12 +28,10 @@ try:
                         data = True
                         header = header[:-1]
                         header += '\n'
-                        newContent.append(header)
-                    elif "%" in line:
-                        header = header
-                    else:
-                        newContent.append(line)
-                        new = newContent
+                        newContent.append(header)            
+                else:
+                    newContent.append(line)
+                    new = newContent
             
             print(header)
             print(new)
