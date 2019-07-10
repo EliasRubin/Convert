@@ -18,7 +18,7 @@ try:
             header = ""
             newCsv = []
             newJson = {}
-
+            
             
             for line in data:
                 if not csvSwitch:
@@ -35,8 +35,18 @@ try:
                     newCsv.append(line)
 
                     
-                    
-            print(str(len(newCsv)))
+            
+            i = 0
+            
+            i = len(newCsv)
+            
+            
+            txt = "hello, my name is Peter, I am 26 years old"
+
+            x = txt.split(",")
+
+            print(x[0])
+            
             
             
             
