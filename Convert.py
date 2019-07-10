@@ -11,30 +11,29 @@ if len(sys.argv) != 2:
 try:
         
         with open(sys.argv[1], "r") as inFile:
-            content = inFile.readlines()
+            data = inFile.readlines()
             name,ext = os.path.splitext(inFile.name)
             
-            data = False
+            dataSwitch = False
             header = ""
-            data
-            newContent = []
-            for line in content:
-                if not data:
+            newData = []
+            for line in data:
+                if not dataSwitch:
                     if "@attribute" in line:
                         attri = line.split()
-                        columnName = attri[attri.index("@attribute")+1]
-                        header = header + columnName + ","
+                        column = attri[attri.index("@attribute")+1]
+                        header = header + column + ","
                     elif "@data" in line:
-                        data = True
+                        dataSwitch = True
                         header = header[:-1]
                         header += '\n'
-                        newContent.append(header)            
+                        newData.append(header)            
                 else:
-                    newContent.append(line)
-                    new = newContent
+                    newData.append(line)
+
             
             with open(name+".csv", "w") as outFile:
-                outFile.writelines(new)
+                outFile.writelines(newData)
             
         
          
