@@ -33,11 +33,16 @@ try:
                 else:
                     newCsv.append(line)
 
+            for rows in newCsv:
+                id = rows['id']
+                dataJson[id] = rows
             
             with open(name + ".csv", "w") as filecsv:
                 filecsv.writelines(newCsv)
                 
-                
+               
+
+
             with open(name + ".json", 'w') as filejson:  
                 json.dump(dataJson, filejson)
             
