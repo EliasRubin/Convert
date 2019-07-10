@@ -68,7 +68,7 @@ try:
                 while i < len(headers):
                     dataJson[i] = dataJson[i][:-1]
                     temp = dataJson[i].split(",")
-                    f.write(headers[i] + ': ' + temp)
+                    filejson.write(headers[i] + ': ' + temp)
                     i += 1
                 
                 
