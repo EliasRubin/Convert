@@ -55,6 +55,7 @@ try:
                     if temp[0][0] == "%":
                         break
                     dataJson[j] += temp[j]
+                    dataJson[j] += ","
                     j += 1
                 i += 1
             
