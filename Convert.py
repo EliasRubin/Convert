@@ -32,7 +32,8 @@ try:
                         newContent.append(line)
                         new = newContent
 
-            print(new)
+            with open(name+".csv", "w") as outFile:
+            outFile.writelines(new)
         
          
        
