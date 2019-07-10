@@ -59,15 +59,12 @@ try:
                 i += 1
             
             
-            i = 0
-            while i < len(headers):
-                print(dataJson[i])
-                i += 1
+
             
             i = 0
             while i < len(headers):
                 headers[i] += ': '
-                headers[i] += dataJson[i].split(",")
+                headers[i] += dataJson[i]
                 i += 1
                 
                 
