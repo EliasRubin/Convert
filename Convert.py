@@ -64,8 +64,9 @@ try:
             
             i = 0
             while i < len(headers):
+                temp = dataJson[i].split
                 headers[i] += ': '
-                headers[i] += dataJson[i]
+                headers[i] += temp
                 i += 1
                 
                 
