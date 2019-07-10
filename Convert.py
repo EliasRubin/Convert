@@ -36,21 +36,7 @@ try:
 
                     
                     
-            headers = []
-            word = ""
-            i = 0
-            j = 0
-            while 1 == 1:
-                if newCsv[i] == ',':
-                    word += newCsv[i]
-                else:
-                    headers[j] = word
-                    j += 1
-                    word = ""
-            i += 1
-            
-            
-            print(headers)
+            print(newCsv[0])
             
             
             with open(name + ".csv", "w") as filecsv:
