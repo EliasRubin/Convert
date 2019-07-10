@@ -36,10 +36,8 @@ try:
 
                     
                     
-            print(newCsv[0][0])
-            print(newCsv[1][0])
-            print(newCsv[2][0])
-            print(newCsv[3][0])
+            print(str(len(newCsv)))
+            
             
             
             with open(name + ".csv", "w") as filecsv:
