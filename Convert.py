@@ -36,10 +36,10 @@ try:
 
                     
                     
-            print(newCsv[0])
-            print(newCsv[1])
-            print(newCsv[2])
-            print(newCsv[3])
+            print(newCsv[0][0])
+            print(newCsv[1][0])
+            print(newCsv[2][0])
+            print(newCsv[3][0])
             
             
             with open(name + ".csv", "w") as filecsv:
