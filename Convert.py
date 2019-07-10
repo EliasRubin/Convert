@@ -11,8 +11,10 @@ try:
 
         data = arff.loadarff(sys.argv[1])
         
+        print(data)
+        
         for row in data:
-            print(data[row])
+            print(row)
         
 
 
