@@ -52,17 +52,16 @@ try:
                     print(temp)
                     if temp[0][0] == "%":
                         break
-                    dataJson[j] += temp[j]
-                    dataJson[j] += ','
+                    dataJson[j].append temp[j]
                     j += 1
                 i += 1
             
             
             i = 0
             while i < len(headers):
-                temp = dataJson[i].split(",")
                 headers[i] += ': '
-                headers[i] += temp
+                headers[i] += dataJson[i]
+                i += 1
                 
                 
             
