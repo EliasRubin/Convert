@@ -63,14 +63,13 @@ try:
             
             
 
-            
-            i = 0
-            while i < len(headers):
-                dataJson[i] = dataJson[i][:-1]
-                temp = dataJson[i].split(",")
-                print(temp)
-                headers[i] += ': '
-                i += 1
+            with open(name + ".json", 'w') as filejson: 
+                i = 0
+                while i < len(headers):
+                    dataJson[i] = dataJson[i][:-1]
+                    temp = dataJson[i].split(",")
+                    f.write(headers[i] + ': ' + temp)
+                    i += 1
                 
                 
             
@@ -79,9 +78,6 @@ try:
                 
                
 
-
-            with open(name + ".json", 'w') as filejson:  
-                json.dump(headers, filejson)
             
         
          
