@@ -64,7 +64,10 @@ try:
                     dataJson[j] += ","
                     j += 1
                 i += 1
-            
+            i = 0
+            while i < len(headers):
+                dataJson[i] = dataJson[i][:-1]
+                i += 1
             
             
 
