@@ -14,26 +14,32 @@ try:
             data = file.readlines()
             name,ext = os.path.splitext(file.name)
             
-            dataSwitch = False
+            csvSwitch = False
             header = ""
-            newData = []
+            newCsv = []
+            newJson = {}  
+            
             for line in data:
-                if not dataSwitch:
+                if not csvSwitch:
                     if "@attribute" in line:
                         attri = line.split()
                         column = attri[attri.index("@attribute")+1]
                         header = header + column + ","
                     elif "@data" in line:
-                        dataSwitch = True
+                        csvSwitch = True
                         header = header[:-1]
                         header += '\n'
-                        newData.append(header)            
+                        newCsv.append(header)            
                 else:
-                    newData.append(line)
+                    newCsv.append(line)
 
             
-            with open(name+".csv", "w") as filecsv:
-                filecsv.writelines(newData)
+            with open(name + ".csv", "w") as filecsv:
+                filecsv.writelines(newCsv)
+                
+                
+            with open(name + ".json", 'w') as filejson:  
+                json.dump(dataJson, filejson)
             
         
          
