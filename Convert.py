@@ -45,10 +45,10 @@ try:
             print(headers)
             
             i = 1
-            while i < (len(newCsv)-1):
+            while i < len(newCsv):
                 j = 0
                 temp = newCsv[i].split(",")
-                print(str(len(temp)))
+                print(temp)
                 item = '{ '
                 while j < len(headers):
                     item += headers[j] + ': ' + temp[j] + ', '
