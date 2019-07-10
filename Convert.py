@@ -11,10 +11,10 @@ if len(sys.argv) != 2:
 try:
         
         with open(sys.argv[1], "r") as inFile:
-        content = inFile.readlines()
-        name,ext = os.path.splitext(inFile.name)
-        new = toCsv(content)
-        print(new)
+            content = inFile.readlines()
+            name,ext = os.path.splitext(inFile.name)
+            new = toCsv(content)
+            print(new)
         
          
        
