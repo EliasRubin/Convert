@@ -41,19 +41,12 @@ try:
 
             headers = newCsv[0].split(",")
             
-            i = 1
-            while i < len(newCsv):
-                j = 0
+            i = 0
+            while i < len(headers):
+                j = j
                 temp = newCsv[i].split(",")
-                item = '\n{ '
-                while j < len(headers):
-                    if temp[0][0] == '%':
-                        break 
-                    item += headers[j] + ': ' + temp[j] + ', '
-                    j += 1
-                item = item[:-2]
-                item = item + ' }\n'
-                newJson += item
+                while j < len(newCsv):
+                    #add each item to respective header here, go ahead and change the value in headers for efficientcy.
                 i += 1
             
             
