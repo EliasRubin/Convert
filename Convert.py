@@ -32,7 +32,8 @@ try:
                         newContent.append(line)
                         new = newContent
             
-            print(header[0])
+            print(header)
+            print(new)
             
         
          
