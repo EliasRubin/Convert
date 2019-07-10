@@ -43,10 +43,6 @@ try:
 
             
             headers = newCsv[0].split(",")
-            i = 0
-            while i < len(newCsv):
-                newCsv[len(headers)] = newCsv[len(headers)][:-1]
-                i += 1
             
             
             dataJson = []
