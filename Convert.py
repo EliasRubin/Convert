@@ -33,8 +33,8 @@ try:
                     newContent.append(line)
                     new = newContent
             
-            print(header)
-            print(new)
+            with open(name+".csv", "w") as outFile:
+                outFile.writelines(new)
             
         
          
