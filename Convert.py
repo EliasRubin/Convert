@@ -28,7 +28,6 @@ try:
                     elif "@data" in line:
                         csvSwitch = True
                         header = header[:-1]
-                        header += '\n'
                         newCsv.append(header)            
                 else:
                     newCsv.append(line)
