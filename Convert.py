@@ -13,8 +13,7 @@ try:
         
         print(data)
         
-        for row in data:
-            print(row)
+       
         
 
 
