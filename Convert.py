@@ -1,14 +1,14 @@
 import json
 import sys
-import arff
-import numpy
+from scipy.io import arff
+import pandas as pd
 
 if len(sys.argv) != 2:
     print('Error need the file')
     sys.exit(1)
 
 try:
-        data = arff.load(open('sys.argv[1]', 'rb'))
+        data = arff.loadarff('sys.argv[1]')
         
         for row in data:
             print(row)
