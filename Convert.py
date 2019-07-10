@@ -40,16 +40,30 @@ try:
 
 
             headers = newCsv[0].split(",")
+            dataJson = []
             
-            i = 0
-            while i < len(headers):
-                j = j
+            
+            
+            i = 1
+            while i < len(newCsv):
+                j = 0
                 temp = newCsv[i].split(",")
-                while j < len(newCsv):
-                    #add each item to respective header here, go ahead and change the value in headers for efficientcy.
+                while j < len(headers):
+                    if dataJson[0] == "%":
+                        break
+                    dataJson[j] += temp[j]
+                    dataJson[j] += ','
+                    j += 1
                 i += 1
             
             
+            i = 0
+            while i < len(headers):
+                temp = dataJson[i].split(",")
+                headers[i] += ': '
+                headers[i] += temp
+                
+                
             
             with open(name + ".csv", "w") as filecsv:
                 filecsv.writelines(newCsv)
