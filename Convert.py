@@ -66,7 +66,7 @@ try:
                 
             
             with open(name + ".csv", "w") as filecsv:
-                filecsv.writelines(newCsv)
+                filecsv.writelines(headers)
                 
                
 
