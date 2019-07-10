@@ -49,6 +49,7 @@ try:
                 j = 0
                 temp = newCsv[i].split(",")
                 while j < len(headers):
+                    print(temp)
                     if temp[0][0] == "%":
                         break
                     dataJson[j] += temp[j]
