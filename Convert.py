@@ -46,6 +46,7 @@ try:
             i = 0
             while i < len(newCsv):
                 newCsv[len(headers)-1] = newCsv[len(headers)-1][:-1]
+                i += 1
             
             
             dataJson = []
