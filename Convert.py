@@ -8,11 +8,14 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 try:
+        print('test1')
         data = arff.loadarff('sys.argv[1]')
         
+        print('test2')
         for row in data:
             print(row)
-
+        
+        print('test3')
 
 
 
