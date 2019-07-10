@@ -52,7 +52,7 @@ try:
                     if temp[0][0] == "%":
                         break
                     print(temp)
-                    dataJson[].append(temp[j])
+                    dataJson.append(temp[j])
                     j += 1
                 i += 1
             
