@@ -17,8 +17,7 @@ try:
             csvSwitch = False
             header = ""
             newCsv = []
-            newJson = {}
-            newJson = []
+            newJson = ""
             
             for line in data:
                 if not csvSwitch:
@@ -46,7 +45,7 @@ try:
             while i < len(newCsv):
                 j = 0
                 temp = newCsv[i].split(",")
-                item = '{ '
+                item = '\n{ '
                 while j < len(headers):
                     if temp[0][0] == '%':
                         break 
@@ -56,7 +55,6 @@ try:
                 item = item + ' }\n'
                 newJson.append(item)
                 i += 1
-            
             
             
             
