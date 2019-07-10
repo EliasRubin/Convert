@@ -40,7 +40,7 @@ try:
 
 
             headers = newCsv[0].split(",")
-            dataJson = [len(headers)]
+            dataJson = []
             
             
             
@@ -52,7 +52,7 @@ try:
                     if temp[0][0] == "%":
                         break
                     print(temp)
-                    dataJson[j] += temp[j]
+                    dataJson[].append(temp[j])
                     j += 1
                 i += 1
             
