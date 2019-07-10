@@ -49,7 +49,7 @@ try:
                 j = 0
                 temp = newCsv[i].split(",")
                 while j < len(headers):
-                    if dataJson[0][0] == "%":
+                    if temp[0][0] == "%":
                         break
                     dataJson[j] += temp[j]
                     dataJson[j] += ','
