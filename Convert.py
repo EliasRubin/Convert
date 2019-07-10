@@ -61,11 +61,11 @@ try:
             
             
 
+            print(dataJson[0])
             
             i = 0
             while i < len(headers):
                 headers[i] += ': '
-                print(dataJson[i])
                 i += 1
                 
                 
