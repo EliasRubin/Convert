@@ -53,7 +53,7 @@ try:
                     j += 1
                 item = item[:-2]
                 item = item + ' }\n'
-                newJson.append(item)
+                newJson + = item
                 i += 1
             
             
