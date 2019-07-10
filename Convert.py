@@ -35,17 +35,26 @@ try:
                     newCsv.append(line)
 
                     
-            
-            i = 0
-            
-            i = len(newCsv)
+           
             
             
 
 
             headers = newCsv[0].split(",")
 
-            print(headers)
+            
+            i = 1
+            while i < len(newCsv):
+                j = 0
+                temp = newCvs[i].split(",")
+                item = '{ '
+                while j < len(headers):
+                    item += headers[j] + ': " + temp[j] + ', '
+                    j += 1
+                item = item[:-2]
+                item = item + ' }'
+                newJson.append(item)
+                i += 1
             
             
             
@@ -57,7 +66,7 @@ try:
 
 
             with open(name + ".json", 'w') as filejson:  
-                json.dump(dataJson, filejson)
+                json.dump(newJson, filejson)
             
         
          
