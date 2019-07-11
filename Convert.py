@@ -71,6 +71,7 @@ try:
                     print(str(len(headers)))
                     print(header[j])
                     print(dataJson[j])
+                    print(temp[j])
                     dataJson[j] += temp[j]
                     dataJson[j] += ", "
                     j += 1
