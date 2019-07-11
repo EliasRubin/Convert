@@ -73,7 +73,7 @@ try:
             
 
             with open(name + ".json", 'w') as filejson: 
-                filejson.write(header[0])
+                filejson.write(headers[0])
                 
             
             
