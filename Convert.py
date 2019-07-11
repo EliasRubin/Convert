@@ -68,13 +68,13 @@ try:
             i = 0
             while i < len(headers):
                 dataJson[i] = dataJson[i][:-1]
-                dataJson[i] = dataJson[i] + "\n"
                 i += 1
             
             
 
             with open(name + ".json", 'w') as filejson: 
-                json.dump(dataJson, filejson)
+                filejson.write(header[0])
+                json.dump(dataJson[0], filejson)
                 
             
             
