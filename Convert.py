@@ -29,7 +29,6 @@ try:
                     elif "@ATTRIBUTE" in line:
                         attri = line.split()
                         column = attri[attri.index("@ATTRIBUTE")+1]
-                        print(column)
                         header = header + column + ","
                     elif "@data" in line:
                         csvSwitch = True
