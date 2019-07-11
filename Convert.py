@@ -68,6 +68,9 @@ try:
                         break
                     if j == len(headers) -1:
                         temp[j] = temp[j][:-1]
+                    print(str(len(headers)))
+                    print(header[j])
+                    print(dataJson[j])
                     dataJson[j] += temp[j]
                     dataJson[j] += ", "
                     j += 1
