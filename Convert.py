@@ -48,8 +48,7 @@ try:
             dataJson = []
             i = 0
             while i < len(headers):
-                dataJson.append(headers[i])
-                dataJson[i] += ": "
+                dataJson.append("")
                 i += 1
             
             i = 1
@@ -74,6 +73,7 @@ try:
 
             with open(name + ".json", 'w') as filejson: 
                 filejson.write(headers[0])
+                json.dump(dataJson[0], filejson)
                 
             
             
