@@ -65,7 +65,7 @@ try:
             while i < len(newCsv):
                 j = 0
                 temp = newCsv[i].split(",")
-                if temp[0] != "\n"
+                if temp[0] != '\n'
                     while j < len(headers):
                         if temp[0][0] == "%":
                             break
