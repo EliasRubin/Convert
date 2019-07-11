@@ -72,7 +72,11 @@ try:
             
 
             with open(name + ".json", 'w') as filejson: 
-                filejson.write(headers[0] + ": [" + dataJson[0] + "]")
+                i = 0
+                while i < len(headers):
+                    dataJson.append("")
+                    filejson.write(headers[i] + ": [" + dataJson[i] + "]")
+                    i += 1
 
                 
             
