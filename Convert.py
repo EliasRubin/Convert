@@ -68,6 +68,7 @@ try:
             i = 0
             while i < len(headers):
                 dataJson[i] = dataJson[i][:-1]
+                dataJson[i] = dataJson[i] + "\n"
                 i += 1
             
             
