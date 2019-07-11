@@ -26,10 +26,19 @@ try:
                         column = attri[attri.index("@attribute")+1]
                         print(column)
                         header = header + column + ","
+                    elif "@ATTRIBUTE" in line:
+                        attri = line.split()
+                        column = attri[attri.index("@attribute")+1]
+                        print(column)
+                        header = header + column + ","
                     elif "@data" in line:
                         csvSwitch = True
                         header = header[:-1]
-                        newCsv.append(header)            
+                        newCsv.append(header)  
+                    elif "@DATA" in line:
+                        csvSwitch = True
+                        header = header[:-1]
+                        newCsv.append(header)
                 else:
                     if line[0] == "%":
                         break
