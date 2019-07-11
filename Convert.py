@@ -57,7 +57,6 @@ try:
             i = 0
             while i < len(headers):
                 dataJson.append("")
-                print(headers[i])
                 i += 1
             
             
@@ -66,6 +65,7 @@ try:
             while i < len(newCsv):
                 j = 0
                 temp = newCsv[i].split(",")
+                print(temp)
                 while j < len(headers):
                     if temp[0][0] == "%":
                         break
