@@ -28,7 +28,7 @@ try:
                         header = header + column + ","
                     elif "@ATTRIBUTE" in line:
                         attri = line.split()
-                        column = attri[attri.index("@attribute")+1]
+                        column = attri[attri.index("@ATTRIBUTE")+1]
                         print(column)
                         header = header + column + ","
                     elif "@data" in line:
