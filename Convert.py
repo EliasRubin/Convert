@@ -24,6 +24,7 @@ try:
                     if "@attribute" in line:
                         attri = line.split()
                         column = attri[attri.index("@attribute")+1]
+                        print(column)
                         header = header + column + ","
                     elif "@data" in line:
                         csvSwitch = True
@@ -41,7 +42,7 @@ try:
             
             
 
-            print(newCsv)
+
             headers = newCsv[0].split(",")
             
             
