@@ -50,7 +50,7 @@ try:
             
             
 
-
+            print(newCsv)
             headers = newCsv[0].split(",")
             
             
