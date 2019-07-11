@@ -73,10 +73,16 @@ try:
 
             with open(name + ".json", 'w') as filejson: 
                 i = 0
+                filejson.write("{\n")
                 while i < len(headers):
                     dataJson.append("")
-                    filejson.write(headers[i] + ": [" + dataJson[i] + "]\n")
+                    filejson.write(headers[i] + ": [" + dataJson[i] + "]")        
                     i += 1
+                    if i != len(headers):
+                        filejson.write(",")
+                    filejson.write("\n")
+                filejson.write("}")
+                        
 
                 
             
