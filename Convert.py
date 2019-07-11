@@ -24,7 +24,6 @@ try:
                     if "@attribute" in line:
                         attri = line.split()
                         column = attri[attri.index("@attribute")+1]
-                        print(column)
                         header = header + column + ","
                     elif "@ATTRIBUTE" in line:
                         attri = line.split()
