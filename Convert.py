@@ -74,7 +74,6 @@ try:
 
             with open(name + ".json", 'w') as filejson: 
                 filejson.write(header[0])
-                json.dump(dataJson[0], filejson)
                 
             
             
