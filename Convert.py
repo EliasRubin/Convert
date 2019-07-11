@@ -76,7 +76,7 @@ try:
                 filejson.write("{\n")
                 while i < len(headers):
                     dataJson.append("")
-                    filejson.write(headers[i] + ": [" + dataJson[i] + "]")        
+                    filejson.write("    " + headers[i] + ": [" + dataJson[i] + "]")        
                     i += 1
                     if i != len(headers):
                         filejson.write(",")
