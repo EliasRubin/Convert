@@ -61,12 +61,12 @@ try:
                     if j == len(headers) -1:
                         temp[j] = temp[j][:-1]
                     dataJson[j] += temp[j]
-                    dataJson[j] += ","
+                    dataJson[j] += ", "
                     j += 1
                 i += 1
             i = 0
             while i < len(headers):
-                dataJson[i] = dataJson[i][:-1]
+                dataJson[i] = dataJson[i][:-2]
                 i += 1
             
             
@@ -75,7 +75,7 @@ try:
                 i = 0
                 while i < len(headers):
                     dataJson.append("")
-                    filejson.write(headers[i] + ": [" + dataJson[i] + "]", end=" ")
+                    filejson.write(headers[i] + ": [" + dataJson[i] + "]")
                     i += 1
 
                 
